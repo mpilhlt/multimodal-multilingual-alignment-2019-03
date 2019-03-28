@@ -1,0 +1,665 @@
+<!doctype html>
+
+<html lang="de">
+<head>
+    <title>Multimodale Versuche der Alignierung historischer Texte</title>
+
+    <!-- meta information -->
+    <meta name="author" content="Andreas Wagner, Manuela Bragagnolo" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1920" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="resources/img/favicon.png" />
+    <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+    <!-- CSS reset and grid -->
+    <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+    <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+
+    <!-- styles for included libraries -->
+
+    <link rel="stylesheet" href="extras/highlight/styles/github.css">
+
+    <!-- mermaid -->
+    <link rel="stylesheet" href="extras/mermaid/mermaid.forest.css">
+
+    <!-- substeps -->
+<!--
+    <link rel="stylesheet" href="extras/impress-substeps/css/substeps.css" />
+-->
+
+    <!-- chartist -->
+<!--
+    <link rel="stylesheet" href="vendor/chartist/chartist.min-0.9.7.css" />
+-->
+
+    <!-- codemirror -->
+    <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+    <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+
+    <!-- standard presentation styles -->
+    <link href="resources/css/style.css" rel="stylesheet" />
+
+    <!-- custom presentation styles -->
+    <link href="resources/css/custom.css" rel="stylesheet" />
+
+    <!-- js needed in head -->
+
+    <!-- greuler -->
+    <script src="vendor/d3/d3-3.5.6.js"></script>
+    <script src="vendor/cola/cola.v3.min.js"></script>
+    <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+
+    <!-- html5 dataset shim for IE -->
+    <script src="vendor/impress/html5-dataset.js" type="text/javascript"></script>
+</head>
+
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress" data-transition-duration="750">
+
+    <div class="step slide" id="title" data-x="0" data-y="0" data-scale="2">
+        <h4><strong>2019-03-28</strong> | <a class="green" href="http://www.uni-frankfurt.de/de">Frankfurt/M.</a></h4>
+        <h4><strong class="small"><a class="green" href="http://dhd2019.org/">DHd2019 &quot;multimedial & multimodal&quot;</a></strong></h4>
+
+        <h1 class="down-100">Multimodale Versuche der Alignierung historischer Texte</h1>
+
+        <h4 class="down-100">
+            <strong>Slides:</strong>
+            <a href="https://rg-mpg-de.github.io/multimodal-multilingual-alignment-2019-03/" title="View the presentation online">https://rg-mpg-de.github.io/multimodal-multilingual-alignment-2019-03</a>
+        </h4>
+
+        <h5>
+            <strong><a class="green" href="https://www.rg.mpg.de/wagner">Andreas Wagner</a></strong> |
+            <img src="resources/img/twitter_bird_logo_2012.svg" alt="Twitter" class="twitter-icon" />
+                <a class="green" href="https://twitter.com/anwagnerdreas" title="Andreas on Twitter">@anwagnerdreas</a> |
+            <img src="resources/img/octicons-mark-github.svg" alt="Github" class="gh-icon" />
+                <a class="green" href="https://github.com/rg-mpg-de" title="MPIeR on GitHub">rg-mpg-de</a> |
+                <a class="green" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a><br/>
+            <strong><a class="green" href="https://www.rg.mpg.de/bragagnolo">Manuela Bragagnolo</a></strong> |
+            <img src="resources/img/twitter_bird_logo_2012.svg" alt="Twitter" class="twitter-icon" />
+                <a class="green" href="https://twitter.com/" title="Manuela on Twitter">@ManuelaBragagn5</a>
+        </h5>
+    </div>
+
+    <div class="step slide" id="intro_hazp" data-rel-x="1000" data-y="0">
+        <header>
+            <h1>Einleitung</h1>
+            <h2>HyperAzpilcueta</h2>
+        </header>
+        <main>
+            <div class="mfp-lightbox">
+                <a class="green" href="resources/img/mpier-small.jpg"><img style="float:right;margin-top:1em;margin-right:-2.5em;width:12em;z-index:1;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/mpier-small.jpg" alt="MPIeR"/></a>
+                <a class="green" href="resources/img/mpier-homepage.png"><img style="margin-top:-8em;margin-left:0;width:26em;z-index:1;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/mpier-homepage.png" alt="HyperAzpilcueta Project"/></a></li>
+            </div>
+            <h5 class="small" style="margin-top:2em;">
+                <strong><a class="green" href="https://www.rg.mpg.de/wagner">Andreas Wagner</a></strong> |
+                <img src="resources/img/twitter_bird_logo_2012.svg" alt="Twitter" class="twitter-icon" />
+                    <a class="green" href="https://twitter.com/anwagnerdreas" title="Andreas on Twitter">@anwagnerdreas</a> |
+                <img src="resources/img/octicons-mark-github.svg" alt="Github" class="gh-icon" />
+                    <a class="green" href="https://github.com/rg-mpg-de" title="MPIeR on GitHub">rg-mpg-de</a> |
+                    <a class="green" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a><br/>
+                <strong><a class="green" href="https://www.rg.mpg.de/bragagnolo">Manuela Bragagnolo</a></strong> |
+                <img src="resources/img/twitter_bird_logo_2012.svg" alt="Twitter" class="twitter-icon" />
+                    <a class="green" href="https://twitter.com/" title="Manuela on Twitter">@ManuelaBragagn5</a>
+            </h5>
+        </main>
+    </div>
+
+    <div class="step slide" id="intro_editions" data-rel-x="1000" data-y="0">
+        <header>
+            <h1>Einleitung</h1>
+            <h2>Azpilcuetas Manual</h2>
+        </header>
+        <main>
+            <div class="mfp-lightbox">
+                <a class="green" href="resources/img/mirador-5editions.png"><img style="margin-left=4em;width:35em;z-index:1;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/mirador-5editions.png" alt="Azpilcueta's Manual"/></a>
+            </div>
+        </main>
+    </div>
+
+    <div class="step slide" id="intro_changes">
+        <header>
+            <h1>Einleitung</h1>
+            <h2>5 Editionen</h2>
+        </header>
+        <main>
+            <h2>Azpilcuetas <i>Manual de Confesores</i></h2>
+            <div class="mfp-lightbox">
+                <a class="green" href="resources/img/editions.png"><img style="margin-left=4em;width:30em;z-index:1;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/editions.png" alt="Changes in editions"/></a>
+            </div>
+        </main>
+    </div>
+
+    <div class="step slide" id="intro_changes2" data-rel-x="0" data-y="0">
+        <header>
+            <h1>Einleitung</h1>
+            <h2>5 Editionen</h2>
+        </header>
+        <main>
+            <h2>Azpilcuetas <i>Manual de Confesores</i></h2>
+            <div class="mfp-lightbox">
+                <a class="green" href="resources/img/editions-highlighted.png"><img style="margin-left=4em;width:30em;z-index:1;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/editions-highlighted.png" alt="The editions we're treating"/></a>
+            </div>
+        </main>
+    </div>
+
+    <div class="step slide" id="intro_data1" data-rel-x="1000" data-y="0">
+        <header>
+            <h1>Einleitung</h1>
+            <h2>Bemerkungen zu den Daten</h2>
+        </header>
+        <main>
+            <h2>Azpilcuetas <i>Manual de Confesores</i></h2>
+            <div class="mfp-gallery">
+                <a class="green" href="resources/img/mirador-22-74.png">
+                    <img style="margin-left=4em;width:30em;z-index:10;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/mirador-22-74.png" alt="Some Peculiarities"/>
+                </a>
+                <a class="green" href="resources/img/mirador-25-74.png">
+                    <img style="margin-left=4em;width:1px;z-index:5;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/mirador-25-74.png" alt="Some more Peculiarities"/>
+                </a>
+                <a class="green" href="resources/img/mirador-25-76.png">
+                    <img style="margin-left=4em;width:1px;z-index:6;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/mirador-25-76.png" alt="And some more ..."/>
+                </a>
+             </div>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment_oa">
+        <header>
+            <h1>Alignierung</h1>
+            <h2>Vorbemerkung</h2>
+        </header>
+        <main>
+            <h2>Open Science</h2>
+            <h3>(CC-BY 4.0/MIT)</h3>
+            <h4><a href="https://gitlab.gwdg.de/andreas.wagner01/azpilcueta">https://gitlab.gwdg.de/andreas.wagner01/azpilcueta</a></h4>
+            <ul>
+                <li><strong>TEI/XML Dateien</strong></li>
+                <li><strong>Jupyter Notebooks</strong></li>
+                <li><strong>Zwischenergebnisse</strong> (segmentierte, lemmatisierte usw. Dateien)</li>
+                <li><strong>Endergebnisse</strong> (HTML Alignierungen, Auswertung in OfficeCalc)</li>
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment_intro">
+        <header>
+            <h1>Alignment</h1>
+            <h2>Übersicht</h2>
+        </header>
+        <main>
+            <h2>Verschiedene Perspektiven</h2>
+            <ol>
+                <li>Statistisch</li>
+                <li>Linguistisch</li>
+                <li>Semantisch</li>
+            </ol>
+       </main>
+    </div>
+
+    <div class="step slide" id="alignment-preproc">
+        <header>
+            <h1>Alignment</h1>
+            <h2>0. Preprocessing</h2>
+        </header>
+        <main>
+            <h2>Doch zuerst: Vorverarbeitung</h2>
+            <ul>
+                <li>Plaintext</li>
+                <li>Segmentierung
+                    <ul>
+                        <li>fixed-length</li>
+                        <li>paragraph</li>
+                        <li>milestones</li>
+                        <li>Satz</li>
+                    </ul>
+                </li>
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-1-gach">
+        <header>
+            <h1>Alignment</h1>
+            <h2>1. Statistisch</h2>
+        </header>
+        <main>
+            <h2>Gale/Church</h2>
+            <ol>
+                <li>Koeffizient und Varianz bestimmen</li>
+                <li>Für alle Kombinationen Wahrscheinlichkeit bestimmen</li>
+                <li>Kosten für Probleme und Transformationen definieren</li>
+                <li>Durch Löschung/Zusammenfassung/Aufteilung Kosten minimieren</li>
+            </ol>
+            <p class="invisible">3 (Python-)Implementierungen: NLTK, Bleualign, NTU-MC</br>
+               <span class="red">Keine Vertauschungen!</span></p>
+            <h3 class="invisible"><b>Ergebnis</b></h3>
+            <ul class="invisible">
+                <li>108 Vorschläge, 53 gut, 55 Falsche Positive (NLTK)
+                <li>119 Vorschläge, 69 gut, 50 FP ("Bleualign")
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-1-gach2" data-rel-x="0" data-y="0">
+        <header>
+            <h1>Alignment</h1>
+            <h2>1. Statistisch</h2>
+        </header>
+        <main>
+            <h2>Gale/Church</h2>
+            <ol>
+                <li>Koeffizient und Varianz bestimmen</li>
+                <li>Für alle Kombinationen Wahrscheinlichkeit bestimmen</li>
+                <li>Kosten für Probleme und Transformationen definieren</li>
+                <li>Durch Löschung/Zusammenfassung/Aufteilung Kosten minimieren</li>
+            </ol>
+            <p>3 (Python-)Implementierungen: NLTK, Bleualign, NTU-MC</br>
+               <span class="red">Keine Vertauschungen!</span></p>
+            <h3><b>Ergebnis</b></h3>
+            <ul>
+                <li>108 Vorschläge, 53 gut, 55 Falsche Positive (NLTK)
+                <li>119 Vorschläge, 69 gut, 50 FP ("Bleualign")
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-sgram" data-rel-x="1000" data-y="0">
+        <header>
+            <h1>Alignment</h1>
+            <h2>1. Statistisch</h2>
+        </header>
+        <main>
+            <h2>Skipgrams</h2>
+            <ol>
+                <li>Alle 1-5-Skipgrams erzeugen: Bsp. "Was sind Daten?"</br>
+                    <div class="mfp-lightbox">
+                        <a class="green" href="resources/img/jupyter-skipgrams.png"><img style="float:right;margin-right=1em;width:5em;z-index:1;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/jupyter-skipgrams.png" alt="Skipgrams"/></a>
+                    </div>
+                    <pre>"Was s" "Was " "Wass" "Wa s" "Ws s" "as s"
+"as si" "as s" "as i" "assi" "a si" "s si"</pre></li>
+                <li>Für jeden Abschnitt zählen, wie oft jedes Skipgram darin vorkommt</li>
+                <li>Vektorisieren und für jeden Abschnitt den "Partner" mit maximaler Kosinus-Ähnlichkeiten bestimmen
+                    <table class="smaller">
+                        <tr><th>Dokument</th><th>Länge</th><th>Jahr</th><th>&quot;que&quot;</th></tr>
+                        <tr><td>Ed1549_1_0</td><td>  140</td><td>1549</td><td>1</td></tr>
+                        <tr><td>Ed1552_1_0</td><td>  191</td><td>1552</td><td>0</td></tr>
+                        <tr><td>Ed1556_1_0</td><td>5.972</td><td>1556</td><td>32<td></tr>
+                    </table>
+                </li>
+            </ol>
+            <h3 class="invisible"><b>Ergebnis</b></h3>
+            <ul class="invisible">
+                <li>101 Vorschläge, alle gut (!!)
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-sgram2" data-rel-x="0" data-y="0">
+        <header>
+            <h1>Alignment</h1>
+            <h2>1. Statistisch</h2>
+        </header>
+        <main>
+            <h2>Skipgrams</h2>
+            <ol>
+                <li>Alle 1-5-Skipgrams erzeugen: Bsp. "Was sind Daten?"</br>
+                    <div class="mfp-lightbox">
+                        <a class="green" href="resources/img/jupyter-skipgrams.png"><img style="float:right;margin-right=1em;width:5em;z-index:1;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/jupyter-skipgrams.png" alt="Skipgrams"/></a>
+                    </div>
+                    <pre>"Was s" "Was " "Wass" "Wa s" "Ws s" "as s"
+"as si" "as s" "as i" "assi" "a si" "s si"</pre></li>
+                <li>Für jeden Abschnitt zählen, wie oft jedes Skipgram darin vorkommt</li>
+                <li>Vektorisieren und für jeden Abschnitt den "Partner" mit maximaler Kosinus-Ähnlichkeiten bestimmen
+                    <table class="smaller">
+                        <tr><th>Dokument</th><th>Länge</th><th>Jahr</th><th>&quot;que&quot;</th></tr>
+                        <tr><td>Ed1549_1_0</td><td>  140</td><td>1549</td><td>1</td></tr>
+                        <tr><td>Ed1552_1_0</td><td>  191</td><td>1552</td><td>0</td></tr>
+                        <tr><td>Ed1556_1_0</td><td>5.972</td><td>1556</td><td>32<td></tr>
+                    </table>
+                </li>
+            </ol>
+           <h3><b>Ergebnis</b></h3>
+            <ul>
+                <li>101 Vorschläge, alle gut (!!)
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-ling-pre"  data-rel-x="1000" data-y="0">
+        <header>
+            <h1>Alignment</h1>
+            <h2>Linguistisch</h2>
+        </header>
+        <main>
+            <h2>Preprocessing</h2>
+            <p>(<a href="http://nlp.lsi.upc.edu/freeling/">FreeLing Tool Suite</a>)</p>
+            <ul>
+                <li>Tokenisierung</li>
+                <li><i>(Satz-Aufteilung)</i></li> 
+                <li>Lemmatisierung</li>
+                <li>PoS Tagging</li>
+                <li>Bedeutungs-Annotation (Synset Ids)</li>
+                <li><i>Sammeln: Mehrwort-Ausdrücke (= NE) sowie Zahlen</i></li> 
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-lin-vanilla" data-rel-x="1000" data-y="0">
+        <header>
+            <h1>Alignment</h1>
+            <h2>Linguistisch</h2>
+        </header>
+        <main>
+            <h2>&quot;Plain vanilla&quot; Kosinus Ähnlichkeit</h2>
+            <p>(<a href="http://nlp.lsi.upc.edu/freeling/">FreeLing Tool Suite</a>)</p>
+            <ul>
+                <li>Tokenisierung</li>
+                <li>Lemmatisierung</li>
+                <li>PoS Tagging</li>
+                <li>Bedeutungs-Annotation</li>
+                <li><i>Sammeln: Mehrwort-Ausdrücke (= NE) sowie Zahlen</i></li> 
+            </ul>
+            <h3 class="invisible"><b>Ergebnis</b></h3>
+            <ul class="invisible">
+                <li>101 Vorschläge, davon 41 gut und 60 FP
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-lin-vanilla2" data-rel-x="0" data-y="0">
+        <header>
+            <h1>Alignment</h1>
+            <h2>Linguistisch</h2>
+        </header>
+        <main>
+            <h2>&quot;Plain vanilla&quot; Kosinus Ähnlichkeit</h2>
+            <p>(<a href="http://nlp.lsi.upc.edu/freeling/">FreeLing Tool Suite</a>)</p>
+            <ul>
+                <li>Tokenisierung</li>
+                <li>Lemmatisierung</li>
+                <li>PoS Tagging</li>
+                <li>Bedeutungs-Annotation</li>
+                <li><i>Sammeln: Mehrwort-Ausdrücke (= NE) sowie Zahlen</i></li> 
+            </ul>
+            <h3><b>Ergebnis</b></h3>
+            <ul>
+                <li>101 Vorschläge, davon 41 gut und 60 FP
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-lin-tfidf" data-rel-x="1000" data-y="0">
+        <header>
+            <h1>Alignment</h1>
+            <h2>Linguistisch</h2>
+        </header>
+        <main>
+            <h2>&quot;TF/IDF-gewichtete&quot; Kosinus Ähnlichkeit</h2>
+            <ul>
+                <li>Die Häufigkeit von Begriffen, die <i>überall</i> häufig vorkommen,
+                    macht sie für das aktuelle Dokument nicht mehr automatisch hochrelevant</li>
+            </ul>
+            <h3 class="invisible"><b>Ergebnis</b></h3>
+            <ul class="invisible">
+                <li>97 Vorschläge, davon 81 gut und 16 FP
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-lin-tfidf2" data-rel-x="0" data-y="0">
+        <header>
+            <h1>Alignment</h1>
+            <h2>Linguistisch</h2>
+        </header>
+        <main>
+            <h2>&quot;TF/IDF-gewichtete&quot; Kosinus Ähnlichkeit</h2>
+            <ul>
+                <li>Die Häufigkeit von Begriffen, die <i>überall</i> häufig vorkommen,
+                    macht sie für das aktuelle Dokument nicht mehr automatisch hochrelevant</li>
+            </ul>
+            <h3><b>Ergebnis</b></h3>
+            <ul>
+                <li>97 Vorschläge, davon 81 gut und 16 FP
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-lin-fteng" data-rel-x="1000" data-y="0">
+        <header>
+            <h1>Alignment</h1>
+            <h2>Linguistisch</h2>
+        </header>
+        <main>
+            <h2>&quot;Feature-engineered&quot; Kosinus Ähnlichkeit</h2>
+            <ul>
+                <li>Übereinstimmung in den Marginalnummern</li>
+                <li>Übereinstimmung in Named Entities bzw. Zahlen</li>
+            </ul>
+            <h3 class="invisible"><b>Ergebnis</b></h3>
+            <ul class="invisible">
+                <li>99 Vorschläge, davon 85 gut und 14 FP
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-lin-fteng2" data-rel-x="0" data-y="0">
+        <header>
+            <h1>Alignment</h1>
+            <h2>Linguistisch</h2>
+        </header>
+        <main>
+            <h2>&quot;Feature-engineered&quot; Kosinus Ähnlichkeit</h2>
+            <ul>
+                <li>Übereinstimmung in den Marginalnummern</li>
+                <li>Übereinstimmung in Named Entities bzw. Zahlen</li>
+            </ul>
+            <h3><b>Ergebnis</b></h3>
+            <ul>
+                <li>99 Vorschläge, davon 85 gut und 14 FP
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-graph" data-rel-x="1000" data-y="0">
+        <header>
+            <h1>Alignment</h1>
+            <h2>Semantisch</h2>
+        </header>
+        <main>
+            <h2>Wissens-/Graphbasiert</h2>
+            <ol>
+                <li>Graph mit Konzepten im Dokument initialisieren</li>
+                <li>Graph Expansion: Aus einem globalen Wissensvorrat Entitäten und Relationen ergänzen,
+                    die mit den vorhandenen Konzepten verknüpft sind</li>
+                <li>Graphen vergleichen</li>
+            </ol>
+            <h3><b>Kein Ergebnis</b></h3>
+        </main>
+    </div>
+
+    <div class="step slide" id="alignment-results">
+        <header>
+            <h1>Evaluation</h1>
+        </header>
+        <main>
+            <h2>Evaluation</h2>
+            <p><i>(Ungeeignet: BLEU, NIST, ROUGE etc.)</i></p>
+            <table>
+                <tr><th>&nbsp;</th><th>P</th><th>TP</th><th>FP</th><th>Prec</th><th>Rec</th><th>F</th></tr>
+                <tr><td>GOLD</td><td>116</td><td>116</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Skipgrams</td><td>101</td><td>101</td><td>0</td><td>1,000</td><td>0,871</td><td>0,931</td></tr>
+                <tr><td>5-grams</td><td>102</td><td>100</td><td>2</td><td>0,980</td><td>0,862</td><td>0,917</td></tr>
+                <tr><td>Ft. Eng.</td><td>99</td><td>85</td><td>14</td><td>0,858</td><td>0,733</td><td>0,791</td></tr>
+                <tr><td>TF/IDF</td><td>97</td><td>81</td><td>16</td><td>0,835</td><td>0,698</td><td>0,761</td></tr>
+                <tr><td>GaCh Bleu</td><td>119</td><td>69</td>50<td></td><td>0,580</td><td>0,595</td><td>0,587</td></tr>
+                <tr><td>GaCh NLTK</td><td>108</td><td>53</td>55<td></td><td>0,491</td><td>0,457</td><td>0,473</td></tr>
+                <tr><td>Sense Ann.</td><td>101</td><td>41</td><td>60</td><td>0,406</td><td>0,353</td><td>0,378</td></tr>
+            </table>
+        </main>
+    </div>
+
+    <div class="step slide" id="conclusion">
+        <header>
+            <h1>Konklusion</h1>
+            <h2>Resumé</h2>
+        </header>
+        <main>
+            <h2>Resumé</h2>
+            <ul>
+                <li>Skipgrams am besten, aber (wohl) nur für diese Sprachen</li>
+                <li>Linguistische Analysen taugen erst nach gezieltem Feature Engineering,
+                    dann erreichen sie aber fast die Werte der Skipgrams</li>
+                <li>Bei kombinierten Übersetzungen und Überarbeitungen sind längenbasierte Maße untauglich</li>
+                <li>Aufwand und Rechenbedarf:
+                    <ul>
+                        <li>Skipgrams einfach und performant</li>
+                        <li>Linguistische Analysen erfordern Implementierungs- und Feat. Engineering Aufwand</li>
+                        <li>Graphbasierte Analysen sind sehr rechenintensiv (?)</li>
+                    </ul>
+                </li>
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="conclusion2">
+        <header>
+            <h1>Konklusion</h1>
+            <h2>Ausblick</h2>
+        </header>
+        <main>
+            <h2>Ausblick: Nächste Schritte</h2>
+            <ul>
+                <li>Graphbasiertes Alignment abschließen</li>
+                <li>Andere Segmentierungen (Satz?)</li>
+                <li>Andere Struktur (1549) und Sprache (1573)</li>
+                <li>Korrektur der TEI Dateien (für eine digitale Edition)</li>
+                <li>Normalisierung?</li>
+            </ul>
+        </main>
+    </div>
+
+    <div class="step slide" id="links">
+        <header>
+            <h1>Vielen Dank!</h1>
+        </header>
+        <main>
+            <dl>
+                <dt>Präsentation erstellt mit</dt>
+                <dd style="font-size:20px;"><a href="https://github.com/impress/impress.js">impress.js</a></dd>
+            </dl>
+            <h2>&nbsp;</h2>
+            <p>Präsentation online betrachten:<br/>
+                <a href="https://rg-mpg-de.github.io/multimodal-multilingual-alignment-2019-03/" title="View the presentation online">https://rg-mpg-de.github.io/multimodal-multilingual-alignment-2019-03/</a>
+            </p>
+            <h2>&nbsp;</h2>
+            <h5>
+                <strong><a class="green" href="https://www.rg.mpg.de/wagner">Andreas Wagner</a></strong> |
+                <img src="resources/img/twitter_bird_logo_2012.svg" alt="Twitter" class="twitter-icon" />
+                    <a class="green" href="https://twitter.com/anwagnerdreas" title="Andreas on Twitter">@anwagnerdreas</a> |
+                <img src="resources/img/octicons-mark-github.svg" alt="Github" class="gh-icon" />
+                    <a class="green" href="https://github.com/rg-mpg-de" title="MPIeR on GitHub">rg-mpg-de</a> |
+                    <a class="green" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a><br/>
+                <strong><a class="green" href="https://www.rg.mpg.de/bragagnolo">Manuela Bragagnolo</a></strong> |
+                <img src="resources/img/twitter_bird_logo_2012.svg" alt="Twitter" class="twitter-icon" />
+                    <a class="green" href="https://twitter.com/" title="Manuela on Twitter">@ManuelaBragagn5</a>
+            </h5>
+        </main>
+    </div>    
+
+</div>
+
+<!--
+    This is a UI plugin. You can read more about plugins in src/plugins/README.md.
+    For now, I'll just tell you that this adds some graphical controls to navigate the
+    presentation. In the CSS file you can style them as you want. We've put them bottom right.
+-->
+<!--
+<div id="impress-toolbar"></div>
+-->
+
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
+</script>
+
+<!-- Extra modules
+     Load highlight.js, mermaid.js and impressCconsole.js from extras.
+     If you're curious about details, these are initialized in src/plugins/extras/extras.js -->
+<script type="text/javascript" src="extras/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="extras/mermaid/mermaid.min.js"></script>
+
+<!--
+<script type="text/javascript" src="extras/impress-substeps/js/substeps2.js"></script>
+<script type="text/javascript" src="extras/impress-substeps/js/automatedpresentation.js"></script>
+-->
+
+<script type="text/javascript" src="extras/impress-console/js/impressConsole.js"></script>
+<script type="text/javascript">
+  // For impressConsole, we unfortunately must also set the path to a mandatory css file
+  // which is relative to this html file.
+  // See https://github.com/regebro/impress-console/issues/19
+  var impressConsoleCss = 'extras/impress-console/css/impressConsole.css';
+</script>
+
+    <!-- jquery -->
+    <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+
+    <!-- chartist -->
+<!--
+    <script src="vendor/chartist/chartist.min-0.9.7.js"></script>
+    <script src="resources/js/chartist.charts.js"></script>
+-->
+
+    <!-- codemirror -->
+<!--
+    <script src="vendor/codemirror/lib/codemirror.js"></script>
+    <script src="vendor/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="vendor/codemirror/mode/cypher/cypher.js"></script>
+    <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("cypher"), {
+            mode: "application/x-cypher-query",
+            theme: 'neo'
+        });
+    </script>
+-->
+
+    <!-- highlight -->
+    <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="resources/js/hljs.linenumbering.js"></script>
+
+    <!-- magnific popup -->
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+    <script src="resources/js/magnific-popup.lightbox.js"></script>
+
+<!--
+    To make all described above really work, you need to include impress.js in the page.
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document.
+-->
+<script type="text/javascript" src="js/impress.js"></script>
+<script>impress().init();</script>
+<script>
+    var api = impress();
+</script>
+
+</body>
+</html>
